@@ -1,0 +1,478 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    padding: 17px 65px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.nav-Top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-Top h3{
+    font-weight: 550;
+}
+
+.nav-Top a{
+    text-decoration: none;
+    color: #000;
+}
+
+.search {
+    width: 750px;
+    display: flex;
+    align-items: center;
+}
+
+.searchTo{
+    border: 2.5px solid #088178;
+}
+
+.search .bi{
+    font-size: 22px;
+    padding: 0px 10px;
+}
+
+.offer span{
+    font-weight: 600;
+}
+
+.offer .bi-gift{
+    color: #bd6924;
+}
+
+.todaysoffer{
+    font-size: 20px;
+    font-weight: 400;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navBottom a{
+    text-decoration: none;
+}
+
+.menuItem{
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    font-weight: 550;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.menuItem:hover{
+    color: #198754;
+    
+}
+
+/* slider Section */
+
+
+.carousel-item img{
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 43%;
+    left: 16%;
+    transform: translateY(-50%);
+    color: #fff; /* Set the text color */
+    z-index: 3; /* Ensure the content is above the image and overlay */
+}
+
+.carousel-content h1 {
+    color: #000000;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.carousel-content p {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.carousel-content span{
+    font-size: 20px;
+    color: #000000;
+}
+.carousel-item:first-child img {
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+    overflow: hidden;
+    position: relative; /* Make sure the ::before pseudo-element is positioned relative to the img */
+}
+
+/* .carousel-item:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+} */
+
+
+/* Features Section */
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.featureicon{
+    width: 60px;
+    height: 60px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 17px;
+}
+
+.featuredDesc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+/* Product section */
+
+
+.products{
+    height: 100vh;
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 89%);
+
+    position: relative;
+    
+}
+.productimg{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.productdetails{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 40%;
+    padding: 50px;
+}
+
+.productprice{
+    font-size: 16px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.productDesc{
+    margin-top: 40px;
+    font-size: 18px;
+    color: gray;
+}
+
+/* .colors, .productsizes{
+    display: flex;
+}
+
+.color{
+    height: 35px;
+    width: 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1.5px solid;
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+} */
+
+/* .size:hover{
+    color: white;
+    background-color: black;
+} */
+
+.productbtn{
+    margin-top: 50px;
+    float: right;
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.productbtn:hover{
+    background-color: #ffc107;
+    color: black;
+    border: 1px solid #ffc107 ;
+}
+
+/*==== offer section ====*/
+
+#offersection{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 130px 50px 130px;
+    flex-wrap: wrap;
+}
+#offersection .banner-box{
+    height: 50vh;
+    min-width: 580px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(img/b17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#offersection .Bbox-2{
+    background-image: url(img/offer2.jpg);
+}
+
+#offersection h4{
+    font-size: 20px;
+    color: rgb(235, 235, 235);
+    font-weight: 400;
+}
+
+#offersection h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+#offersection span{
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-weight: 450;
+}
+
+.banner-box button{
+    color: white;
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 9px 15px;
+    cursor: pointer;
+    border: 1.5px solid white;
+    transition: 100;
+
+}
+#offersection .banner-box:hover button{
+    background-color: #198754;
+    border: 1px solid #198754;
+}
+/* ------------------------- */
+#offersecond{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+
+
+#offersecond .offsec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: url('img/b4.jpg');
+    background-size: cover;
+    min-width: 150px;
+    height: 30vh;
+} 
+/* --------------------offer end-------------------------- */
+
+
+/*=== productslider ===*/
+
+/* .myCarousel div {
+  border: 1px solid red
+} */
+
+/* .myCarousel div {
+  border: 1px solid red
+} */
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bi-arrow-left-square-fill,
+  .bi-arrow-right-square-fill {
+    font-size: 2.5rem;
+    color: #000000;
+  }
+  
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+  }
+  
+  .client img {
+    width: 100%; /* Set the width to 100% of the parent container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 300px; /* Set a maximum height if needed */
+    object-fit: cover; /* Scale the image while maintaining its aspect ratio and covering the entire container */
+  }
+  
+
+  
+  /* .owl-theme .owl-dots .owl-dot span {
+    background-color: #FF6C2250;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #FF6C22;
+    display: none;
+  }
+  
+  .owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: left;
+  } */
+
+
+/*===== Footer section =====*/
+
+footer{
+    display: flex;
+    background-color: rgb(28, 28, 28);
+    color: #ffff;
+}
+.footerleft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px 10px 200px;
+    
+}
+
+.footertitle{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fMenulist{
+    padding: 0;
+    list-style: none;
+    color: rgb(200, 191, 191);
+    
+}
+
+.item{
+    color: rgb(200, 191, 191);
+    margin-bottom: 7px;
+    cursor: pointer;   
+}
+
+.fMenulist a{
+    text-decoration: none;
+}
+
+.item:hover{
+    color: #ffc107;
+}
+
+.footerright{
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fInput{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.footerbtn{
+    padding: 5px;
+    background-color: #000;
+    color: #ffff;
+    border: none;
+}
+
+.footerbtn:hover{
+    color: black;
+    background-color: #ffc107;
+    border: none;
+}
+
+.footerfollow{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ficon{
+    font-size: 20px;
+    color: rgb(200, 191, 191);
+    margin-bottom: 22px;
+}
+.ficon:hover{
+    color: #ffc107;
+}
+.copyright{
+    font-size: 15px;
+    font-weight: 600;
+}
